@@ -169,7 +169,7 @@
 
 ## **Degree of Relationship**
 
-| **Degree** | **Type**          | **Image**                                                                                           |
+|| **Type**          | **Image**                                                                                           |
 |------------|-------------------|-----------------------------------------------------------------------------------------------------|
 | 1          | **Unary (1 Degree)**       | ![Unary](https://media.geeksforgeeks.org/wp-content/uploads/20231030173427/unary.jpg)               |
 | 2          | **Binary (2 Degrees)**     | ![Binary](https://media.geeksforgeeks.org/wp-content/uploads/20231030173529/binary.jpg)             |
@@ -227,9 +227,7 @@
 ## **Integrity Constraints**
 
 - **Domain Constraints**: Defines valid values for an attribute.
-- **Entity Integrity
-
- Constraint**: Primary key value cannot be null.
+- **Entity Integrity Constraint**: Primary key value cannot be null.
 - **Referential Integrity Constraints**: Foreign key must refer to a valid primary key or be null.
 - **Key Constraint**: Primary key values must be unique.
 
@@ -237,16 +235,16 @@
 
 ## **Reduction of ER Diagrams to Tables**
 
-| **Type**                              | **Description**                                  | **Image**                                                                                      |
-|---------------------------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------|
-| 1. Weak Entity                        | ![Image 9](https://i.ibb.co/xXKgRjX/1-1.png)    |                                                                                                 |
-| 2. Composite Attributes               | ![Image 8](https://i.ibb.co/n1pZ3RV/2-1.png)    |                                                                                                 |
-| 3. Multi-Valued Attributes            | ![Image 7](https://i.ibb.co/9sHf14j/3-1.png)    |                                                                                                 |
-| 4. Many-to-Many Relationship          | ![Image 6](https://i.ibb.co/7Y6GS0P/4-1.png)    |                                                                                                 |
-| 5. One-to-Many Relationship           | ![Image 5](https://i.ibb.co/YR1sqpB/5-1.png)    |                                                                                                 |
-| 6. Aggregation                        | ![Image 4](https://i.ibb.co/1QrspC9/6-1.png)    |                                                                                                 |
-| 7. Unary One-to-Many Relationship     | ![Image 3](https://i.ibb.co/YLSnxc9/7-1.png)    |                                                                                                 |
-| 8. Unary One-to-One Relationship      | ![Image 2](https://i.ibb.co/rpBvVmb/8-1.png)    |                                                                                                 |
-| 9. Unary Many-to-Many Relationship    | ![Image 1](https://i.ibb.co/rmwpqR2/9-1.png)    |                                                                                                 |
+| **Type**                              | **Description**                                 |
+|---------------------------------------|-------------------------------------------------|
+| 1. Weak Entity                        | ![Image 9](https://i.ibb.co/xXKgRjX/1-1.png)    |
+| 2. Composite Attributes               | ![Image 8](https://i.ibb.co/n1pZ3RV/2-1.png)    |
+| 3. Multi-Valued Attributes            | ![Image 7](https://i.ibb.co/9sHf14j/3-1.png)    |
+| 4. Many-to-Many Relationship          | ![Image 6](https://i.ibb.co/7Y6GS0P/4-1.png)    |
+| 5. One-to-Many Relationship           | ![Image 5](https://i.ibb.co/YR1sqpB/5-1.png)    |
+| 6. Aggregation                        | ![Image 4](https://i.ibb.co/1QrspC9/6-1.png)    |
+| 7. Unary One-to-Many Relationship     | ![Image 3](https://i.ibb.co/YLSnxc9/7-1.png)    |
+| 8. Unary One-to-One Relationship      | ![Image 2](https://i.ibb.co/rpBvVmb/8-1.png)    |
+| 9. Unary Many-to-Many Relationship    | ![Image 1](https://i.ibb.co/rmwpqR2/9-1.png)    |
 
 ---
