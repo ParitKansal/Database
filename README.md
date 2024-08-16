@@ -1,41 +1,48 @@
 # DBMS
+
+
+
+
+
+---
+
 ## Introduction to DBMS
 
-### Database
-- **Definition**: A structured system where data is stored, accessed, updated, and managed efficiently.
+### **Database**
+- **Definition**: A structured system for storing, accessing, updating, and managing data efficiently.
 
-### Database Management System (DBMS)
+### **Database Management System (DBMS)**
 - **Components**:
   - **Database**: Collection of interrelated data.
-  - **Set of Programs**: To access, store, update, and delete data.
+  - **Set of Programs**: For accessing, storing, updating, and deleting data.
 
 ![DBMS](https://i.ibb.co/kmNHLFL/dbms.png)
 
-### Tasks of a DBMS
-1. **Definition**: Defining data structures for storage.
-2. **Insertion**: Adding new data.
-3. **Updation**: Modifying existing data.
-4. **Retrieval**: Fetching data.
-5. **Administration**: Managing and maintaining the database.
+### **Tasks of a DBMS**
+1. **Definition**: Defines data structures for storage.
+2. **Insertion**: Adds new data.
+3. **Updation**: Modifies existing data.
+4. **Retrieval**: Fetches data.
+5. **Administration**: Manages and maintains the database.
 
-### Disadvantages of DBMS
+### **Disadvantages of DBMS**
 1. **Cost**: Requires investment in specialized hardware and software.
 2. **Size**: Needs significant storage space and resources.
 3. **Complexity**: Requires trained personnel.
 4. **Higher Impact of Failure**: Failures can have significant consequences.
 
-### Disadvantages of File Systems
+### **Disadvantages of File Systems**
 1. **Data Redundancy**: Multiple copies of data.
 2. **Difficulty in Accessing**: Custom programs needed for access.
-3. **Data Isolation**: Difficult to extract data from different files.
-4. **Integrity**: Challenges in applying constraints.
+3. **Data Isolation**: Challenges in extracting data from different files.
+4. **Integrity**: Difficulty in applying constraints.
 5. **Atomicity**: Issues with rollbacks if transactions fail.
-6. **Concurrent Access**: Issues with multiple users accessing data.
+6. **Concurrent Access**: Problems with multiple users accessing data.
 7. **Security Problems**: Vulnerabilities in data security.
 
 ---
 
-## Database Users
+## **Database Users**
 
 1. **Native Users**:
    - Use existing applications to interact with the database.
@@ -46,13 +53,13 @@
    - **Languages**: C, C++, Java.
 
 3. **Sophisticated Users**:
-   - Database developers using SQL directly.
+   - Directly use SQL for database interactions.
    - **Examples**: Scientists, engineers, analysts.
 
 4. **Specialized Users**:
    - Develop complex database applications.
 
-### Database Administrator (DBA)
+### **Database Administrator (DBA)**
 - **Functions**:
   1. Schema definition.
   2. Storage structure and access methods.
@@ -62,28 +69,28 @@
 
 ---
 
-## Instance and Schema
+## **Instance and Schema**
 
-### Instance
+### **Instance**
 - **Definition**: The collection of information stored in the database at a specific moment.
 
-### Schema
-- **Definition**: The structural description of data.
+### **Schema**
+- **Definition**: The structural description of the database.
 
 ---
 
-## Three Schema Architecture
+## **Three Schema Architecture**
 
 - **Levels of Abstraction**:
   1. **Physical Level**: Describes how data is physically stored.
-  2. **Logical/Conceptual Level**: Describes the database design, including data types and relationships.
+  2. **Logical/Conceptual Level**: Describes database design, including data types and relationships.
   3. **View/External Level**: Describes the part of the database that a particular user group interacts with.
 
 ![Three Schema Architecture](https://i.ibb.co/4SPTpMJ/three-level.png)
 
 ---
 
-## DDL and DML
+## **DDL and DML**
 
 1. **Data Definition Language (DDL)**:
    - Defines the database schema.
@@ -91,44 +98,87 @@
 2. **Data Manipulation Language (DML)**:
    - Handles data queries and modifications.
    - **Procedural DML**: Specifies what data is needed and how to get it.
-   - **Non-Procedural DML**: Specifies what data is needed without specifying how to get it.
+   - **Non-Procedural DML**: Specifies what data is needed without detailing how to get it.
 
 ![DBMS Architecture1](https://i.ibb.co/tLsWczG/dbms-archi-1.png)
 ![DBMS Architecture2](https://i.ibb.co/HnqNg79/dbms-archi-2.png)
 
 ---
 
-## Data Models
+## **Data Models**
 
-### Relational Model
+### **Relational Model**
 - **Tables**: Represent data and relationships.
 - **Attributes**: Columns in tables.
 - **Record-based model**: Fixed-format records.
 
 ![Relational Model](https://i.ibb.co/jGJs7m9/rational-database.png)
 
-### Entity-Relationship Model
+### **Entity-Relationship Model**
 - **Entities**: Basic objects with attributes.
 - **Relationships**: Connections among entities.
 
-### Hierarchical Model
+### **Hierarchical Model**
 - Data elements linked in a tree structure with a single root.
 
-### Network Model
-- Extension of hierarchical model with multiple parent-child relationships.
+### **Network Model**
+- Extension of the hierarchical model with multiple parent-child relationships.
 
-### Object-Oriented Model
+### **Object-Oriented Model**
 - Defines data in terms of objects and classes.
 
 ---
 
-## Keys
+## **Keys**
 
 - **Super Key**: All possible keys of a relation.
 - **Candidate Key**: A key whose proper subset is not a key.
 - **Primary Key**: Chosen candidate key for implementation.
 - **Alternate Key**: Candidate keys not chosen as the primary key.
 - **Foreign Key**: References a primary key in another table, ensuring referential integrity.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -169,7 +219,7 @@
 
 ## **Degree of Relationship**
 
-|| **Type**          | **Image**                                                                                           |
+| **Degree** | **Type**          | **Image**                                                                                           |
 |------------|-------------------|-----------------------------------------------------------------------------------------------------|
 | 1          | **Unary (1 Degree)**       | ![Unary](https://media.geeksforgeeks.org/wp-content/uploads/20231030173427/unary.jpg)               |
 | 2          | **Binary (2 Degrees)**     | ![Binary](https://media.geeksforgeeks.org/wp-content/uploads/20231030173529/binary.jpg)             |
@@ -246,5 +296,345 @@
 | 7. Unary One-to-Many Relationship     | ![Image 3](https://i.ibb.co/YLSnxc9/7-1.png)    |
 | 8. Unary One-to-One Relationship      | ![Image 2](https://i.ibb.co/rpBvVmb/8-1.png)    |
 | 9. Unary Many-to-Many Relationship    | ![Image 1](https://i.ibb.co/rmwpqR2/9-1.png)    |
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## Functional Dependency and Normalization
+
+### 1. Functional Dependency (FD)
+
+**Definition:**  
+For a relation $R$ and attributes $A$ and $B$ in $R$, $B$ is functionally dependent on $A$ (denoted $A \rightarrow B$) if each value of $A$ is associated with exactly one value in $B$ in $R$.
+
+**Examples:**
+
+<div style="text-align: center;">
+
+<table style="margin-left: auto; margin-right: auto;">
+  <tr>
+    <th>Functional Dependency Holds (✅)</th>
+    <th>Functional Dependency Doesn't Hold (❌)</th>
+  </tr>
+  <tr>
+    <td>
+      <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <td>A1</td>
+          <td>B1</td>
+        </tr>
+        <tr>
+          <td>A2</td>
+          <td>B2</td>
+        </tr>
+        <tr>
+          <td>A1</td>
+          <td>B1</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <td>A1</td>
+          <td>B1</td>
+        </tr>
+        <tr>
+          <td>A2</td>
+          <td>B2</td>
+        </tr>
+        <tr>
+          <td>A1</td>
+          <td>B2</td>
+        </tr>
+      </table>
+      <p>Because A1 is associated with more than one value in B</p>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+### 2. Functional Dependency with Keys
+
+- If $\alpha$ is a key, then $\alpha \rightarrow \beta$ always holds for any attribute $\beta$.
+
+### 3. Closure of an Attribute
+
+Given relation $R(A, B, C, D)$ with functional dependencies: { $A \rightarrow B$, $A \rightarrow D$, $B \rightarrow C$ }:
+
+- $A^+ = \{A, B, C, D\}$
+- $B^+ = \{B, C\}$
+- $C^+ = \{C\}$
+- $D^+ = \{D\}$
+
+### 4. Trivial Functional Dependency
+
+- A functional dependency $A \rightarrow A$ is always satisfied (trivial).
+
+### 5. Armstrong’s Axioms
+
+- **Reflexivity Rule:** $A \rightarrow B$ holds if $B \subseteq A$.
+- **Augmentation Rule:** If $A \rightarrow B$, then $\alpha A \rightarrow \alpha B$ holds for any set $\alpha$.
+- **Transitivity Rule:** If $A \rightarrow B$ and $C \rightarrow D$, then $A \rightarrow D$ holds.
+
+### 6. Additional Rules
+
+- **Union Rule:** If $A \rightarrow B$ and $A \rightarrow C$, then $A \rightarrow BC$ holds.
+- **Decomposition Rule:** If $A \rightarrow BC$, then $A \rightarrow B$ and $A \rightarrow C$ hold.
+
+### 7. Closure of a Set of Functional Dependencies
+
+- To find all possible functional dependencies from a given set, compute the closure of the attribute sets using Armstrong’s axioms and additional rules.
+
+---
+
+## Normalization
+
+**Definition:**  
+Normalization is the process of minimizing redundancy in a relation or set of relations.
+
+**Purpose:**  
+Redundancy in a relation may cause insertion, deletion, and update anomalies.
+
+**Process:**  
+It involves grouping attributes into well-structured relations that contain minimal redundancy.
+
+**Focus:**  
+It emphasizes the characteristics of specific entities.
+
+**Essence of Normalization:**  
+One relation should have one theme.
+
+---
+
+### Normalization Forms
+
+| **Transformation Process** |
+|-|
+|**Unnormalized Relation**|
+| Removing repeating groups and ensuring that each column contains atomic (indivisible) values. |
+| **First Normal Form (1NF)** |
+| Removing partial dependency.
+Partial dependency occurs when a non-key (also known as non-prime) attribute is functionally dependent on only a part of any Composite key (also known as combination of prime attributes), rather than on the entire key.|
+| **Second Normal Form (2NF)** |
+|Removing transitive dependency.
+Make sure that no non-prime attribute is transitively dependent on the key.|
+| **Third Normal Form (3NF)** |
+| Removing overlapping candidate keys.
+For every functional dependency A -> B, A should be a key in the relation.|
+| **Boyce-Codd Normal Form (BCNF)** |
+| Removing multi-valued dependency, where a relation should not have multiple independent multi-valued facts about an entity. |
+| **Fourth Normal Form (4NF)** |
+| Removing non-implied dependency, ensuring that every join dependency in the relation is implied by the candidate keys.|
+| **Fifth Normal Form (5NF)** |
+
+---
+
+## Types of Decomposition
+
+- **Lossless Decomposition:**  
+  Ensures that the original relation can be perfectly reconstructed from the decomposed relations.  
+  $R = R1 \bowtie R2 \bowtie R3 \bowtie \ldots \bowtie Rn$
+
+- **Lossy Decomposition:**  
+  May not preserve all information from the original relation.  
+  $R \neq R1 \bowtie R2 \bowtie R3 \bowtie \ldots \bowtie Rn$
+
+> **Note:** Decompositions up to 3NF are lossless. Beyond 3NF, decompositions may be either lossy or lossless.
+
+### Dependency Preserving Decomposition
+
+A decomposition is dependency preserving if:
+
+(F1 ∪ F2 ∪ ... ∪ Fn $)^+$ = $F^+$
+
+Where:
+- $F1, F2, \ldots, Fn$ are the functional dependencies derived from the decomposed relations $R1, R2, \ldots, Rn$.
+- $F^+$ is the closure of the original functional dependencies $F$.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## **Relational Algebra**
+
+### **1. Basic Operators**
+
+- **Comparison Operators**: `=`, `≥`, `≤`, `<`, `>`, `≠`
+- **Logical Operators**: `∩` (AND), `∪` (OR)
+
+### **2. Select (σ)**
+
+- **Syntax**: σ<sub><selection–condition></sub>(Relation_name)
+- **Description**: Selects rows from the relation that meet the specified condition.
+
+### **3. Project (Π)**
+
+- **Syntax**: Π<sub>col<sub>1</sub>, col<sub>2</sub>, ...col<sub>n</sub></sub>(Relation_name)
+- **Description**: Projects specified columns from the relation and removes duplicate rows.
+
+### **4. Set Operations**
+
+- **Union (∪)**: Combines rows from two relations, removing duplicates.
+- **Intersection (∩)**: Retrieves rows common to both relations.
+- **Difference (−)**: Retrieves rows in the first relation but not in the second.
+- **Product (×)**: Returns the Cartesian product of two relations.
+
+**Notation Examples**:
+- Π<sub>x</sub>(R<sub>1</sub> ∪ R<sub>2</sub>) = Π<sub>x</sub>(R<sub>1</sub>) ∪ Π<sub>x</sub>(R<sub>2</sub>)
+- Π<sub>x</sub>(R<sub>1</sub> ∩ R<sub>2</sub>) ≠ Π<sub>x</sub>(R<sub>1</sub>) ∩ Π<sub>x</sub>(R<sub>2</sub>)
+
+### **5. Join Operations**
+
+- **Inner Join (⋈)**: Combines rows from two relations based on a condition.
+  - **Condition**: R<sub>1</sub> ⋈<sub>condition</sub> R<sub>2</sub>
+  - **Equal Join**: R<sub>1</sub> ⋈<sub>equal-condition</sub> R<sub>2</sub>
+  - **Natural Join**: R<sub>1</sub> ⋈ R<sub>2</sub>
+
+- **Outer Join**:
+  - **Left Join (⟕)**: Includes all rows from the left relation and matched rows from the right relation.
+    - **Syntax**: R<sub>1</sub> ⟕<sub>condition</sub> R<sub>2</sub>
+  - **Right Join (⟖)**: Includes all rows from the right relation and matched rows from the left relation.
+    - **Syntax**: R<sub>1</sub> ⟖<sub>condition</sub> R<sub>2</sub>
+  - **Full Outer Join (⟗)**: Includes all rows from both relations, with matched rows where available.
+    - **Syntax**: R<sub>1</sub> ⟗<sub>condition</sub> R<sub>2</sub>
+
+### **6. Rename (ρ)**
+
+- **Syntax**: ρ<sub>new_name</sub>(Original_name)
+- **Syntax with Columns**: ρ<sub>new_name(col1, col2, ...)</sub>(Original_name)
+- **Description**: Renames a relation or its attributes.
+
+### **7. Division (÷)**
+
+- **Syntax**: R₁ ÷ R₂
+- **Description**: Retrieves rows from R₁ where the value of each attribute in R₂ is associated with all values of other attributes.
+- **Example**:
+
+Here's the updated table with the data and result for the division operation in relational algebra:
+<table border="1">
+   <thead>
+      <tr>
+         <th>R<sub>1</sub></th>
+         <th>R<sub>2</sub></th>
+         <th>R<sub>1</sub> ÷ R<sub>2</sub></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            <table border="1">
+               <tr>
+                  <th>A</th>
+                  <th>B</th>
+                  <th>C</th>
+               </tr>
+               <tr>
+                  <td>A1</td>
+                  <td>B2</td>
+                  <td>C1</td>
+               </tr>
+               <tr>
+                  <td>A4</td>
+                  <td>B5</td>
+                  <td>C2</td>
+               </tr>
+               <tr>
+                  <td>A1</td>
+                  <td>B2</td>
+                  <td>C2</td>
+               </tr>
+               <tr>
+                  <td>A4</td>
+                  <td>B5</td>
+                  <td>C4</td>
+               </tr>
+            </table>
+         </td>
+         <td>
+            <table border="1">
+               <tr>
+                  <th>A</th>
+                  <th>B</th>
+               </tr>
+               <tr>
+                  <td>A1</td>
+                  <td>B2</td>
+               </tr>
+               <tr>
+                  <td>A4</td>
+                  <td>B5</td>
+               </tr>
+            </table>
+         </td>
+         <td>
+            <table border="1">
+               <tr>
+                  <th>C</th>
+               </tr>
+               <tr>
+                  <td>C2</td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+- **Explanation:** If any value of attribute C is associated with all values of (A, B) in R₂, it will be selected.
 
 ---
