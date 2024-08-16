@@ -1,8 +1,4 @@
-# DBMS
-
-
-
-
+Here’s the cleaned-up version of your DBMS guide:
 
 ---
 
@@ -139,49 +135,6 @@
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
 ## ER Diagram Overview
 
 ### **Entities**
@@ -270,16 +223,18 @@
 | **Disjointness** | **Disjoint**        | An entity can belong to only one lower-level set. |
 |                  | **Overlapping**     | An entity can belong to multiple lower-level sets. |
 | **Completeness** | **Totalness**       | Every higher-level entity must belong to at least one lower-level set. |
-|                  | **Partial**         | Some higher-level entities may not belong to any lower-level set. |
+|                  | **Partial**         | Some higher-level entities may not belong to any lower-level set.|
+
+---
 
 ---
 
 ## **Integrity Constraints**
 
-- **Domain Constraints**: Defines valid values for an attribute.
-- **Entity Integrity Constraint**: Primary key value cannot be null.
-- **Referential Integrity Constraints**: Foreign key must refer to a valid primary key or be null.
-- **Key Constraint**: Primary key values must be unique.
+- **Domain Constraints**: Define the permissible values for an attribute.
+- **Entity Integrity Constraint**: Ensures that the primary key value cannot be null.
+- **Referential Integrity Constraints**: Ensures that a foreign key must either refer to a valid primary key or be null.
+- **Key Constraint**: Ensures that all primary key values are unique.
 
 ---
 
@@ -287,44 +242,19 @@
 
 | **Type**                              | **Description**                                 |
 |---------------------------------------|-------------------------------------------------|
-| 1. Weak Entity                        | ![Image 9](https://i.ibb.co/xXKgRjX/1-1.png)    |
-| 2. Composite Attributes               | ![Image 8](https://i.ibb.co/n1pZ3RV/2-1.png)    |
-| 3. Multi-Valued Attributes            | ![Image 7](https://i.ibb.co/9sHf14j/3-1.png)    |
-| 4. Many-to-Many Relationship          | ![Image 6](https://i.ibb.co/7Y6GS0P/4-1.png)    |
-| 5. One-to-Many Relationship           | ![Image 5](https://i.ibb.co/YR1sqpB/5-1.png)    |
-| 6. Aggregation                        | ![Image 4](https://i.ibb.co/1QrspC9/6-1.png)    |
-| 7. Unary One-to-Many Relationship     | ![Image 3](https://i.ibb.co/YLSnxc9/7-1.png)    |
-| 8. Unary One-to-One Relationship      | ![Image 2](https://i.ibb.co/rpBvVmb/8-1.png)    |
-| 9. Unary Many-to-Many Relationship    | ![Image 1](https://i.ibb.co/rmwpqR2/9-1.png)    |
+| 1. Weak Entity                        | ![Weak Entity](https://i.ibb.co/xXKgRjX/1-1.png) |
+| 2. Composite Attributes               | ![Composite Attributes](https://i.ibb.co/n1pZ3RV/2-1.png) |
+| 3. Multi-Valued Attributes            | ![Multi-Valued Attributes](https://i.ibb.co/9sHf14j/3-1.png) |
+| 4. Many-to-Many Relationship          | ![Many-to-Many](https://i.ibb.co/7Y6GS0P/4-1.png) |
+| 5. One-to-Many Relationship           | ![One-to-Many](https://i.ibb.co/YR1sqpB/5-1.png) |
+| 6. Aggregation                        | ![Aggregation](https://i.ibb.co/1QrspC9/6-1.png) |
+| 7. Unary One-to-Many Relationship     | ![Unary One-to-Many](https://i.ibb.co/YLSnxc9/7-1.png) |
+| 8. Unary One-to-One Relationship      | ![Unary One-to-One](https://i.ibb.co/rpBvVmb/8-1.png) |
+| 9. Unary Many-to-Many Relationship    | ![Unary Many-to-Many](https://i.ibb.co/rmwpqR2/9-1.png) |
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-## Functional Dependency and Normalization
+## **Functional Dependency and Normalization**
 
 ### 1. Functional Dependency (FD)
 
@@ -408,7 +338,7 @@ Given relation $R(A, B, C, D)$ with functional dependencies: { $A \rightarrow B$
 
 - **Reflexivity Rule:** $A \rightarrow B$ holds if $B \subseteq A$.
 - **Augmentation Rule:** If $A \rightarrow B$, then $\alpha A \rightarrow \alpha B$ holds for any set $\alpha$.
-- **Transitivity Rule:** If $A \rightarrow B$ and $C \rightarrow D$, then $A \rightarrow D$ holds.
+- **Transitivity Rule:** If $A \rightarrow B$ and $B \rightarrow C$, then $A \rightarrow C$ holds.
 
 ### 6. Additional Rules
 
@@ -421,26 +351,27 @@ Given relation $R(A, B, C, D)$ with functional dependencies: { $A \rightarrow B$
 
 ---
 
-## Normalization
+## **Normalization**
 
 **Definition:**  
-Normalization is the process of minimizing redundancy in a relation or set of relations.
+Normalization is the process of minimizing redundancy and avoiding anomalies in a relational database by organizing data into well-structured relations.
 
 **Purpose:**  
-Redundancy in a relation may cause insertion, deletion, and update anomalies.
+To eliminate redundancy and avoid insertion, deletion, and update anomalies.
 
 **Process:**  
-It involves grouping attributes into well-structured relations that contain minimal redundancy.
+It involves organizing attributes into relations to ensure minimal redundancy.
 
 **Focus:**  
-It emphasizes the characteristics of specific entities.
+Ensures that each relation represents a single theme or entity.
 
 **Essence of Normalization:**  
-One relation should have one theme.
+One relation should represent one theme or entity.
 
 ---
 
 ### Normalization Forms
+
 
 | **Transformation Process** |
 |-|
@@ -463,7 +394,7 @@ For every functional dependency A -> B, A should be a key in the relation.|
 
 ---
 
-## Types of Decomposition
+## **Types of Decomposition**
 
 - **Lossless Decomposition:**  
   Ensures that the original relation can be perfectly reconstructed from the decomposed relations.  
@@ -479,34 +410,15 @@ For every functional dependency A -> B, A should be a key in the relation.|
 
 A decomposition is dependency preserving if:
 
-(F1 ∪ F2 ∪ ... ∪ Fn $)^+$ = $F^+$
+(F1 ∪ F2 ∪ ... ∪ Fn)<sup>+</sup> = F<sup>+</sup>
 
 Where:
 - $F1, F2, \ldots, Fn$ are the functional dependencies derived from the decomposed relations $R1, R2, \ldots, Rn$.
-- $F^+$ is the closure of the original functional dependencies $F$.
+- F<sup>+</sup> is the closure of the original functional dependencies F.
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Here's the cleaned-up version with the correct formatting:
 
 ---
 
@@ -519,12 +431,12 @@ Where:
 
 ### **2. Select (σ)**
 
-- **Syntax**: σ<sub><selection–condition></sub>(Relation_name)
+- **Syntax**: σ<sub><selection-condition></sub>(Relation_name)
 - **Description**: Selects rows from the relation that meet the specified condition.
 
 ### **3. Project (Π)**
 
-- **Syntax**: Π<sub>col<sub>1</sub>, col<sub>2</sub>, ...col<sub>n</sub></sub>(Relation_name)
+- **Syntax**: Π<sub>col<sub>1</sub>, col<sub>2</sub>, ... col<sub>n</sub></sub>(Relation_name)
 - **Description**: Projects specified columns from the relation and removes duplicate rows.
 
 ### **4. Set Operations**
@@ -561,11 +473,13 @@ Where:
 
 ### **7. Division (÷)**
 
-- **Syntax**: R₁ ÷ R₂
-- **Description**: Retrieves rows from R₁ where the value of each attribute in R₂ is associated with all values of other attributes.
-- **Example**:
+- **Syntax**: R<sub>1</sub> ÷ R<sub>2</sub>
+- **Description**: Retrieves rows from R<sub>1</sub> where the value of each attribute in R<sub>2</sub> is associated with all values of other attributes.
+
+**Example**:
 
 Here's the updated table with the data and result for the division operation in relational algebra:
+
 <table border="1">
    <thead>
       <tr>
@@ -635,6 +549,6 @@ Here's the updated table with the data and result for the division operation in 
    </tbody>
 </table>
 
-- **Explanation:** If any value of attribute C is associated with all values of (A, B) in R₂, it will be selected.
+**Explanation:** If any value of attribute C is associated with all values of (A, B) in R<sub>2</sub>, it will be selected.
 
 ---
