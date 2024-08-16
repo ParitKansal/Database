@@ -1,6 +1,4 @@
-Here’s the cleaned-up version of your DBMS guide:
-
----
+# DBMS
 
 ## Introduction to DBMS
 
