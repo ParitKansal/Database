@@ -415,9 +415,6 @@ Where:
 - F<sup>+</sup> is the closure of the original functional dependencies F.
 
 ---
-
-Here's the cleaned-up version with the correct formatting:
-
 ---
 
 ## **Relational Algebra**
